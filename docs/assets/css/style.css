@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+:root{
+    --bs-guinda: #5A1236;
+    --bs-blanco: #F1F1F1;
+    --bs-gris-dark: #333;
+    --bs-gris-light: #999;
+    --bs-black: #000;
+    --bs-trans-dark: rgba(0,0,0,0.5);
+    --bs-trans-light: rgba(255,255,255,0.2);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 15", sans-serif;
+}
+body{
+    background: var(--bs-blanco);
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header .fogo{
+    background: var(--bs-guinda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header .fogo .logo{
+    margin: 15px;
+    width: 15%;
+}
+header .fogo .logo img{
+    width: 50px;
+    justify-content: center;
+    align-items: left;
+}
+header .fogo .menu{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .fogo .menu .amenu{
+    width: 30%;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    margin-left: 2em;
+    border-radius: 15px;
+}
+header .fogo .menu .amenu:hover{
+    background: #fff;
+    color: #5A1236;
+}
+header .fogo .tit-fogo{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--bs-blanco);
+}
+header .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+header .header .container-head{
+    display: block;
+    padding: 20px;
+    background-color: var(--bs-trans-light);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    justify-content: center;
+}
+header .header .container-heada{
+    display: block;
+    padding: 20px;
+    background-color: var(--bs-trans-light);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+}
+header .header .container-heada .video{
+    width: 100%;
+    height: 100%;
+}
+header .header .container-heada .video iframe{
+    width: 100%;
+    height: 100%;
+}
+header .header .container-head .txt{
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--bs-guinda);
+}
+header .header .container-head .contacto,
+header .header .container-head .contacto a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .header .container-head .contacto a{
+    background: var(--bs-guinda);
+    color: var(--bs-blanco);
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    transition: 1s;
+    text-decoration: none;
+}
+header .header .container-head .contacto a:hover{
+    scale: 1.2;
+    background: var(--bs-blanco);
+    color: var(--bs-guinda);
+}
+
+
+.inter-bar{
+    height: 10vh;
+    background: var(--bs-gris-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inter-bar .txt{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--bs-blanco);
+}
+
+
+
+.cuerpo{
+    background: linear-gradient(
+        var(--bs-trans-dark),
+        var(--bs-trans-dark)
+    ), url(../img/bg-shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cuerpo .producto{
+    width: 25%;
+    height: 85%;
+    background: var(--bs-trans-light);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+}
+.cuerpo .producto .head{text-align: left;}
+.cuerpo .producto .head h2{color: var(--bs-guinda);}
+.cuerpo .producto .head p{color: var(--bs-gris-dark);}
+.cuerpo .producto .img img{width: 80%;}
+.cuerpo .producto .info{text-align: justify;}
+.cuerpo .producto .info .precio{
+    color: var(--bs-black);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--bs-gris-light);
+}
+.contactinfo .contact-1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+}
+.contactinfo .contact-1 .horario{
+    align-items: center;
+    text-align: center;
+    color: var(--bs-guinda);
+}
+.contactinfo .contact-1 .horario .tabla table{
+    text-align: center;
+    background: var(--bs-guinda);
+    color: var(--bs-gris-light);
+}
+.contactinfo .contact-1 .horario .tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactinfo .contact-1 .horario .tabla table td{padding: 5px;}
+.contactinfo .contact-1 .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactinfo .contact-1 .redes .logo-red {margin: 30px;}
+.contactinfo .contact-1 .redes .logo-red {transition: 1s;}
+.contactinfo .contact-1 .redes .logo-red:hover{scale: 1.1;}
+.contactinfo .contact-1 .maps{color: var(--bs-guinda);}
+.contactinfo .contact-1 .cont-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+.contactinfo .contact-1 .cont-form .formulario{
+    background: var(--bs-gris-dark);
+    color: var(--bs-gris-light);
+    width: 60%;
+    padding: 30px;
+    border-radius: 15px;
+}
+.contactinfo .contact-1 .cont-form .formulario input{
+    border: none;
+    border-bottom: 1px solid var(--bs-gris-light);
+    background-color: transparent;
+    outline: none;
+    color: var(--bs-blanco);
+}
+.contactinfo .contact-1 .cont-form .formulario button{
+    background: var(--bs-guinda);
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    color: var(--bs-blanco);
+    cursor: pointer;
+    transition: 1s;
+    font-weight: bold;
+    height: 30px;
+}
+.contactinfo .contact-1 .cont-form .formulario button:hover{
+    background: var(--bs-blanco);
+    color: var(--bs-guinda);
+    scale: 1.2;
+}
+
+
+
+.foot{
+    background: var(--bs-gris-dark);
+    color: var(--bs-blanco);
+    display: block;
+    padding: 30px;
+}
+.foot .inf-util{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.foot .inf-util .foot-inf{
+    margin: 60px;
+}
+.foot .inf-util .foot-inf ul a{
+    text-decoration: none;
+    color: var(--bs-blanco);
+}
+.foot .autor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.foot .autor .txt{
+    color: var(--bs-gris-light);
+}
